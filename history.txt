@@ -1,0 +1,103 @@
+    1  git config --global user.name "Master4610"
+    2  git config --global user.email "master4610@gmail.com"
+    3  git config --global -l
+    4  git init
+    5  git status
+    6  git add .
+    7  git status
+    8  git commit -m "Initel commit"
+    9  git status
+   10  git commit -am "add 2 chars in song.txt"
+   11  git status
+   12  git remote add origin https://github.com/kr-master4610/101025-ptm.git
+   13  git branch -M main
+   14  git status
+   15  git remote -v
+   16  git push -u origin main
+   17  git push -u origin main
+   18  git remote -v
+   19  git remote add origin git@github.com:kr-master4610/101025-ptm.git
+   20  git remote -v
+   21  git push -u origin main
+   22  git push -u origin main
+   23  cd /h/git_intro
+   24  echo "# git_intro" >> README.md
+   25  git init
+   26  git add README.md
+   27  git commit -m "first commit"
+   28  git branch -M main
+   29  git remote add origin git@github.com:kr-master4610/git_intro.git
+   30  git push -u origin main
+   31  git add .
+   32  git push -u origin main
+   33  git add kotenok.jpg
+   34  git push -u origin main
+   35  git commit -m "added foto"
+   36  git branch -M main
+   37  git push -u origin main
+   38  exit
+   39  mkdir git-branch
+   40  cd git-branch
+   41  git init
+   42  git checkout -b gitignore
+   43  echo "### JetBrains template
+   44  ##  git config --global core.excludesfile .gitignore
+   45  ###
+   46  # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio
+   47  # read 
+   48  /src/main/resources/application.yml
+   49  *.iml
+   50  *.json
+   51  .idea/*
+   52  .idea/
+   53  out/
+   54  debug/
+   55  ## Plugin-specific files:
+   56  # IntelliJ
+   57  /out/
+   58  # mpeltonen/sbt-idea plugin
+   59  .idea_modules/
+   60  *.class
+   61  *.jar
+   62  *.war
+   63  *.ear
+   64  *.tmp
+   65  *.exe
+   66  thumbs.db
+   67  .DS_Store
+   68  *.log
+   69  test/
+   70  target/generated-sources/
+   71  target/
+   72  /.classpath
+   73  /.project
+   74  .settings/
+   75  #x-code
+   76  *.xcodeproj"> C:/Users/User/git-branch/.git/.gitignore
+   77  git remote add origin git@github.com:kr-master4610/git-branch.git
+   78  git add .gitignore
+   79  git add .gitignore
+   80  git commit -m "Add initial .gitignore file"
+   81  git push -u origin gitignore
+   82  mkdir git-branch-hw
+   83  cd git-branch-hw
+   84  git init
+   85  echo "# Игнорируем временные файлы" > .gitignore
+   86  echo "*.tmp" >> .gitignore
+   87  git add .gitignore
+   88  git commit -m "Initial commit: add .gitignore"
+   89  git remote add origin git@github.com:kr-master4610/git-branch.git
+   90  git push -u origin main
+   91  git checkout -b feature
+   92  echo "# Проект Git Branch" > README.md
+   93  echo "Это ветка feature, где будут изменения." >> README.md
+   94  echo "*.bak" >> .gitignore
+   95  git add README.md .gitignore
+   96  git commit -m "Add project description and ignore bak files"
+   97  git push -u origin feature
+   98  git commit --amend
+   99  git push -f
+  100  git checkout main
+  101  git merge feature
+  102  git push
+  103  history > history.txt
